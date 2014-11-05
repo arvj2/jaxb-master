@@ -16,6 +16,8 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <glassfish.dir>C:/glassfish-4.1</glassfish.dir>
+        <glassfish.domain>${glassfish.dir}/glassfish/domains</glassfish.domain>
     </properties>
 
     <dependencies>
