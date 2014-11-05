@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jaxb-binding:war exploded">
+    <output-path>$PROJECT_DIR$/jaxb-binding/target/jaxb-binding</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="jaxb-binding/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jaxb-binding" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

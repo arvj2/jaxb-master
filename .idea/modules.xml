@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jaxb-binding/jaxb-binding.iml" filepath="$PROJECT_DIR$/jaxb-binding/jaxb-binding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jaxws-master.iml" filepath="$PROJECT_DIR$/jaxws-master.iml" />
+    </modules>
+  </component>
+</project>
+
