@@ -1,0 +1,29 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:wsam="http://www.w3.org/2005/07/addressing/metadata"
+             xmlns:types="http://com.sample/types"
+             xmlns:tn="http://com.sample/port"
+             targetNamespace="http://com.sample/port"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        >
+
+    <types>
+        <xs:schema>
+            <xs:import namespace="http://com.sample/types" schemaLocation="types.xsd"/>
+        </xs:schema>
+    </types>
+
+    <message name="GetReport">
+        <part name="name" element="types:GetReport"/>
+    </message>
+    <message name="GetReportResponse">
+        <part name="return" element="types:GetReportResponse"/>
+    </message>
+
+    <portType name="ReporterInterface">
+        <operation name="GetReport">
+            <input message="tn:GetReport" wsam:Action="http://com.sample/service/GetReport"/>
+            <output message="tn:GetReportResponse" wsam:Action="http://com.sample/service/GetReportResponse"/>
+        </operation>
+    </portType>
+</definitions>

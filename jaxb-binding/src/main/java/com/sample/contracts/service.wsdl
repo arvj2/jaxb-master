@@ -1,0 +1,28 @@
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:port="http://com.sample/port"
+             xmlns:tn="http://com.sample/service"
+             targetNamespace="http://com.sample/service"
+        >
+
+    <import namespace="http://com.sample/port" location="port.wsdl"/>
+
+    <binding name="ReporterBinding" type="port:ReporterInterface">
+        <soap:binding transport="http://schemas.xmlsoap.org/wsdl/http" style="document"/>
+
+        <operation name="GetReport">
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    
+    <service name="ReportService">
+        <port binding="tn:ReporterBinding" name="Reporter">
+            <soap:address location="http://localhost:8080/jaxb-binding/ReportService"/>
+        </port>
+    </service>
+</definitions>

@@ -1,0 +1,14 @@
+<bindings xmlns="http://java.sun.com/xml/ns/jaxws"
+          xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          wsdlLocation="http://localhost:8080/jaxb-binding/ReportService?wsdl"
+        >
+    <bindings node="wsdl:definitions">
+        <package name="com.sample.contracts"/>
+    </bindings>
+
+    <bindings node="schema">
+        <package name="com.sample.types"/>
+    </bindings>
+
+</bindings>

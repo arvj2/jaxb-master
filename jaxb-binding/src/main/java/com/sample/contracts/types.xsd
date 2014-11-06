@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:tn="http://com.sample/types"
+        targetNamespace="http://com.sample/types"
+        elementFormDefault="qualified">
+
+
+    <element name="GetReport" type="tn:GetReportType"/>
+    <element name="GetReportResponse" type="tn:GetReportResponseType"/>
+
+
+    <complexType name="GetReportType">
+        <sequence>
+            <element name="client" type="tn:ClientType"/>
+        </sequence>
+    </complexType>
+    
+    <complexType name="GetReportResponseType">
+        <sequence>
+            <element name="return" type="string"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="ClientType">
+        <sequence>
+            <element name="name" type='string'/>
+            <element name="last" type='string'/>
+        </sequence>
+    </complexType>
+</schema>
